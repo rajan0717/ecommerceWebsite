@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav {
+    width: 90%;
+
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    flex: 1;
+    text-align: right;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2%;
+    cursor: pointer;
+}
+ul li a {
+    text-decoration: none;
+    color: #606163;
+}
+ul li a:hover {
+    color: #ff4321;
+}
+nav img {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Desigining the content of the website. */
+.info {
+    margin-top: 10%;
+    margin-left: 4%;
+}
+.info h1 {
+    font-size: 70px;
+}
+.info p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+.info a {
+    background: #212121;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.imgBox {
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.imgBox img {
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    bottom: 0;
+    right: 10px;
+    transition: all 1s ease-in;
+}
+.imgBox .back-image {
+    z-index: -1;
+}
+.imgBox:hover .back-image {
+    bottom: 20px;
+}
+.imgBox:hover .main-image {
+    right: 50px;
+}
